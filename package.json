@@ -1,0 +1,41 @@
+{
+  "name": "njava",
+  "version": "0.0.0",
+  "description": "Install java using npm.",
+  "main": "njava.js",
+  "bin": {
+    "njava": "run.js"
+  },
+  "option": {
+    "shell": "njava"
+  },
+  "scripts": {
+    "postinstall": ". ~/.bashrc && njava install",
+    "test": "mocha njava-test.js"
+  },
+  "os": [
+    "linux"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/volkovasystems/njava.git"
+  },
+  "keywords": [
+    "install",
+    "java",
+    "using",
+    "npm",
+    "njava"
+  ],
+  "author": "Richeve S. Bebedor <richeve.bebedor@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/volkovasystems/njava/issues"
+  },
+  "homepage": "https://github.com/volkovasystems/njava#readme",
+  "dependencies": {
+    "comex": "^0.24.0",
+    "gnaw": "^0.21.0",
+    "yargs": "^8.0.2"
+  }
+}
